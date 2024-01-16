@@ -3,7 +3,7 @@ import BlogList from "./BlogList";
 const HomePage = () => {
 
     const [blogs, setBlogs] = useState(null)
-    const [url, setUrl] = useState('http://localhost:8000/blogs')
+    const url = 'http://localhost:8000/blogs'
  
     useEffect(() => {
         fetch(url)

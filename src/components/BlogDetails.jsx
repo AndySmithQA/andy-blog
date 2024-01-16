@@ -18,7 +18,7 @@ const BlogDetails = () => {
     fetch('http://localhost:8000/blogs/' + id)
       .then(res => res.json())
       .then(data =>setBlog(data) )
-  }, [])
+  }, [id])
 
   return (
     <div className="blog-details">
